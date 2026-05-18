@@ -268,11 +268,11 @@ function buildConfirmationEmail(data) {
 
     <div style="background:#1a2560;border-radius:10px;padding:24px;margin:32px 0;text-align:center;">
       <p style="color:rgba(255,255,255,0.85);margin:0 0 16px;font-size:15px;">Ready to talk through your results?</p>
-      <a href="mailto:james@bridgesmediaadvisory.com" style="display:inline-block;background:#fff;color:#1a2560;text-decoration:none;font-weight:700;padding:12px 28px;border-radius:8px;font-size:15px;">Book a Conversation</a>
+      <a href="mailto:james.bridgesadvisory@gmail.com" style="display:inline-block;background:#fff;color:#1a2560;text-decoration:none;font-weight:700;padding:12px 28px;border-radius:8px;font-size:15px;">Book a Conversation</a>
     </div>
   </div>
   <div style="padding:20px 32px;border-top:1px solid #e8e4dc;text-align:center;">
-    <p style="color:#999;font-size:13px;margin:0;">Bridges Media Advisory · james@bridgesmediaadvisory.com</p>
+    <p style="color:#999;font-size:13px;margin:0;">Bridges Media Advisory · james.bridgesadvisory@gmail.com</p>
   </div>
 </div>
 </body>
@@ -296,7 +296,7 @@ export default async function handler(req, res) {
     await Promise.all([
       resend.emails.send({
         from: FROM_EMAIL,
-        to: 'james@bridgesmediaadvisory.com',
+        to: 'jbridgesoz@gmail.com',
         subject: `AI Fluency Assessment — New Submission: ${name}, ${organisation}`,
         html: buildNotificationEmail(data)
       }),
